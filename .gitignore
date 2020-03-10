@@ -4,6 +4,11 @@
 *.dll
 *.so
 *.dylib
+mounts
+main
+docs
+cli/cli
+.idea
 
 # Test binary, built with `go test -c`
 *.test
