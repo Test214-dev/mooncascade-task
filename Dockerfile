@@ -12,4 +12,6 @@ RUN go get github.com/Altoros/gorm-goose/cmd/gorm-goose
 
 RUN go get -u github.com/swaggo/swag/cmd/swag
 
+RUN apt-get -q update && apt-get -qy install netcat
+
 ENTRYPOINT ./start.sh

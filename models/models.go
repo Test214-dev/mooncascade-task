@@ -19,7 +19,7 @@ type Timing struct {
 	PointID   string    `json:"pointId"`  // finish line or finish corridor
 	Timestamp time.Time `json:"timestamp"`
 	ChipID    string    `json:"chipId"`
-	Athlete   `json:"athlete,omitempty"`
+	Athlete   `json:"athlete"`
 }
 
 type AppError struct {

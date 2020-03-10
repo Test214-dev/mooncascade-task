@@ -17,9 +17,9 @@ CREATE TABLE timing_points(
 );
 
 -- +goose Down
-DROP EXTENSION IF EXISTS "uuid-ossp";
 
 DROP TABLE timing_points;
 
 DROP TABLE athletes;
 
+DROP EXTENSION IF EXISTS "uuid-ossp";
