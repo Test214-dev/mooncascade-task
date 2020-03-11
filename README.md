@@ -13,3 +13,4 @@ App listens on port 8080
 * Go to cli directory
 * Build it, `go build`
 * Run `./cli --help` to see available commands
+* If you want to deploy app on server other than localhost, new host address must be put into `cli/config` file

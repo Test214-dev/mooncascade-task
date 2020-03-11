@@ -10,7 +10,7 @@ import (
 	"net/http"
 )
 
-const BaseAppURL = "http://localhost:8080/api"
+var BaseAppURL = "http://localhost:8080/api"
 
 func getResponseError(response *http.Response) string {
 	data, _ := ioutil.ReadAll(response.Body)

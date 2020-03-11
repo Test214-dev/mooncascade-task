@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/spf13/cobra"
+	"io/ioutil"
 	"os"
 )
 
@@ -38,5 +39,12 @@ func Execute() {
 }
 
 func main() {
+
+	rawConfig, err := ioutil.ReadFile("./config")
+	if err != nil {
+		panic(err)
+	}
+
+	BaseAppURL = fmt.Sprintf("%s/api", string(rawConfig))
 	Execute()
 }
